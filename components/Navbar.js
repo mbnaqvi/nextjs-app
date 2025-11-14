@@ -10,7 +10,7 @@ export default async function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-2xl font-bold text-blue-600">
-            Auth Lab
+            NextJS
           </Link>
 
           <div className="flex items-center gap-6">
