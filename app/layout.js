@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "NextJS Auth Lab",
+  title: "NextJS Auth App",
   description: "Authentication with Next.js and Auth.js",
 }
 

@@ -45,7 +45,7 @@ export default async function PostPage({ params }) {
   const post = await getPost(id)
   const comments = await getComments(id)
 
-  const postIds = Array.from({ length: 10 }, (_, i) => i + 1)
+  const postIds = Array.from({ length: 4 }, (_, i) => i + 1)
 
   return (
     <div className="container mx-auto px-4 py-12">
