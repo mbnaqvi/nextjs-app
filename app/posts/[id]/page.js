@@ -2,6 +2,14 @@ import { auth } from "@/auth"
 import { redirect } from "next/navigation"
 import Link from "next/link"
 
+export async function generateMetadata({ params }) {
+  const { id } = await params
+  return {
+    title: `Post ${id} - NextJS`,
+    description: `View post ${id} with comments`,
+  }
+}
+
 async function getPost(id) {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
     cache: "no-store"

@@ -1,6 +1,11 @@
 import { auth } from "@/auth"
 import { redirect } from "next/navigation"
 
+export const metadata = {
+  title: "Main Page - NextJS",
+  description: "Server-side rendered page with protected content",
+}
+
 async function getUsers() {
   const res = await fetch("https://jsonplaceholder.typicode.com/users", {
     cache: "no-store"
